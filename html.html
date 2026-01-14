@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Güvenlik Kutusu | Siber Analiz</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <header class="bg-blue-700 text-white py-6 shadow-lg">
+        <div class="container mx-auto text-center">
+            <h1 class="text-3xl font-bold italic tracking-wider"><i class="fas fa-shield-alt mr-2"></i>SecurityBox</h1>
+            <p class="mt-2 opacity-80">Şifre, Link ve Mail Güvenliğinizi Anlık Test Edin. </p>
+        </div>
+    </header> 
+
+    <main class="container mx-auto mt-10 px-4 max-w-4xl">
+        
+        <div class="flex flex-wrap justify-center gap-4 mb-8">
+            <button onclick="switchTab('mail')" class="tab-btn bg-white border-b-4 border-blue-600 px-6 py-3 rounded shadow hover:bg-blue-50 transition">
+                <i class="fas fa-envelope-open-text mr-2 text-blue-600"></i>Mail Analizi
+            </button>
+            <button onclick="switchTab('url')" class="tab-btn bg-white px-6 py-3 rounded shadow hover:bg-blue-50 transition">
+                <i class="fas fa-link mr-2 text-green-600"></i>URL Kontrol
+            </button>
+            <button onclick="switchTab('password')" class="tab-btn bg-white px-6 py-3 rounded shadow hover:bg-blue-50 transition">
+                <i class="fas fa-key mr-2 text-yellow-600"></i>Şifre Gücü
+            </button>
+        </div> 
+
+      <div id="content-area" class="bg-white p-8 rounded-xl shadow-md border border-gray-100">
+    <div id="mail-section">
+        <h2 class="text-xl font-bold mb-4 text-blue-800">Şüpheli Mail İçeriğini Yapıştırın</h2>
+        <textarea id="mailMetni" class="w-full h-40 p-4 border rounded-lg focus:ring-2 focus:ring-blue-400 outline-none" placeholder="Gelen mailin metnini buraya yapıştırın..."></textarea>
+        <button onclick="analizGonder()" class="mt-4 w-full bg-blue-600 text-white font-bold py-3 rounded-lg hover:bg-blue-700">Analiz Et</button>
+        <div id="sonuc-ekrani"></div>
+    </div>
+</div>
+
+    </main>
+
+    <footer class="mt-20 text-center text-gray-400 text-sm pb-10">
+        © 2025 SecurityBox | Güvenliğiniz için verileriniz asla kaydedilmez.
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="sifreTest.js"></script>
+</body>
+</html>
