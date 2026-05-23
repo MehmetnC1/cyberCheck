@@ -33,7 +33,8 @@ pip install fastapi uvicorn python-multipart
 uvicorn API:app --reload
 ```
 
-✅ **Verileriniz kaydedilmez!** Tüm analizler istemci tarafında gerçekleştirilir ve hiçbir veri sunucuda depolanmaz.
+✅ **Verileriniz kaydedilmez!** Tüm analizler istemci tarafında gerçekleştirilir ve hiçbir veri sunucuda depolanmaz. Kullanmak için güncelleme yapmanız gerekebilir.
+-Site yayında olmadığından kendi local sisteminizde çalıştırıp test edebilirsiniz.
 
 ## 👨‍💻 Geliştirici
 
